@@ -1,17 +1,14 @@
-/*
-@Id
-	@GeneratedValue
-	long id;
 
-	@OneToMany(mappedBy = "sondage")
-	Collection<DatesPossibles> datesPossibles;
 
-	@OneToMany(mappedBy = "sondage")
-	Collection<DateReponses> datesReponses;
+ import {dateReponse} from './dateReponse';
+ import {email} from './email';
 
-	@Temporal(TemporalType.DATE)
-	Date dateValide;
-
-	@ManyToOne
-  Administrateur administrateur;
-  */
+ export interface utilisateur {
+   id : number;
+   nom:string;
+   prenom:string;
+   mail:string;
+   date:Date;
+   email:email;
+   dateReponses : dateReponse[];
+ }

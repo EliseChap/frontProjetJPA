@@ -1,6 +1,6 @@
  import {sondage} from './sondage';
 
- export interface administrateur {
+ export interface datePossible {
    id : number;
    sondage: sondage;
    date: Date;

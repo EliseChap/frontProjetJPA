@@ -1,11 +1,9 @@
-/*
-String preferenceAlimentaire;
-	String allergies;
+ import {reunion} from './reunion';
+ import {email} from './email';
 
-
-	@ManyToOne
-	Email emailparticipant;
-
-	@ManyToOne
-  Reunion reunion;
-  */
+ export interface participant {
+   allergies : string;
+   preferenceAlimentaire : string;
+   emailParticipant: email;
+   reunion: reunion;
+ }

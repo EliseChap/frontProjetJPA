@@ -1,14 +1,8 @@
-/*
-@Id
-	@GeneratedValue
-	long id;
+ import {participant} from './participant';
 
-	@Column(length = 100)
-	String intitule;
-	@Transient
-	String resume;
-
-	@OneToMany(mappedBy = "reunion")
-	Collection<Participants> participants;
-
-  */
+ export interface reunion {
+   id : number;
+   intitule:string;
+   resume:string;
+   participants:participant[]
+ }
